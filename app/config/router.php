@@ -1,6 +1,8 @@
 <?php
 /*
 	#This is routing class. We will route user's requests from this class where we can use custom MVC.
+	
+	DO NOT MAKE ANY CHANGES HERE. YOU MAY START ZOMBIE WAR.
 */
 
 	
