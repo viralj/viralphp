@@ -1,4 +1,29 @@
-User-agent: *
-Crawl-delay: 10
-
+User-agent: baiduspider
 Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+User-agent: Naverbot
+Allow: /
+
+User-agent: seznambot
+Allow: /
+
+User-Agent: Slurp
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: *
+Allow: /
+
+# Wait 4 seconds between successive requests.
+Crawl-delay: 4
