@@ -5,11 +5,12 @@ ob_start();
 date_default_timezone_set('America/Chicago');
 
 try{
-
-if(!isset($_SESSION)) 
-{ 
-    session_start(); 
-}
+	
+	//we need to start session if session is not set
+	if(!isset($_SESSION)) 
+	{ 
+	    session_start(); 
+	}
 	
 	//require router file to start routing application
 	require '../app/config/router.php';
