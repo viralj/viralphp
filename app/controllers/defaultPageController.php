@@ -69,9 +69,9 @@ class DefaultPage extends Exception{
 					);
 
 		$this->header  = '<title>Welcome to your custom PHP script like MVC.</title>';
-		$this->header .= metaTags::meta($this->meta);;
-		$this->header .= metaTags::ogp($this->ogp);;
-		$this->header .= metaTags::twitterCard($this->twitterCard);;
+		$this->header .= metaTags::meta($this->meta);
+		$this->header .= metaTags::ogp($this->ogp);
+		$this->header .= metaTags::twitterCard($this->twitterCard);
 		
 		//view header, head and footer to load
 		echo Views::header($this->header);
