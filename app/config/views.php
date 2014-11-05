@@ -44,7 +44,10 @@ class Views extends Exception{
 		<!-- Created with viralphp, a custom PHP Script like MVC Framework. 
 			Download this script from github.
 			
-			http://github.com/
+			https://github.com/viralj/viralphp
+			
+		     Learn more about viralphp at
+		     	http://www.viralphp.com
 		-->
 		
 		</html>';
