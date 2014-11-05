@@ -17,6 +17,11 @@ include (CONFIG.'views.php');
 */
 include (MODELS.'defaultModel.php');
 
+
+//include meta tags class to generate meta tags, Open Graph tags and twitter card meta tags
+include LIBRARY.'metaTags.php';
+
+
 class DefaultPage extends Exception{
 	
 	/*
@@ -24,11 +29,49 @@ class DefaultPage extends Exception{
 	*/
 	public $header;
 
+	/*
+		@open graph tags in array
+	*/
+	public $ogp = array();
+	
+	/*
+		@twitter card tags in array
+	*/
+	public $twitterCard = array();
+	
+	/*
+		@meta tags in array
+	*/
+	public $meta = array();
 	
 	
+	//construct default page
 	function __construct(){
 		
-		$this->header = '<title>Welcome to your custom PHP script like MVC.</title>';
+		
+		$this->meta = array(
+				'description' => 'A new PHP Script like MVC Framework.',
+				'author' => 'Viral Joshi'
+				);
+				
+		$this->ogp = array(
+				'title' => 'viralphp',
+				'type' => 'html',
+				'url' => SITE,
+				'description' => 'A new PHP Script like MVC Framework.',
+				'locale' => 'en'
+				);
+		
+		$this->twitterCard = array(
+					'title' => 'viralphp',
+					'description' => 'A new PHP Script like MVC Framework.',
+					'url' => SITE
+					);
+
+		$this->header  = '<title>Welcome to your custom PHP script like MVC.</title>';
+		$this->header .= metaTags::meta($this->meta);;
+		$this->header .= metaTags::ogp($this->ogp);;
+		$this->header .= metaTags::twitterCard($this->twitterCard);;
 		
 		//view header, head and footer to load
 		echo Views::header($this->header);
