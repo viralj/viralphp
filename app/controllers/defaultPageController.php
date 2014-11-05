@@ -19,7 +19,7 @@ include (MODELS.'defaultModel.php');
 
 
 //include meta tags class to generate meta tags, Open Graph tags and twitter card meta tags
-include LIBRARY.'metaTags.php';
+include (LIBRARY.'metaTags.php');
 
 
 class DefaultPage extends Exception{
