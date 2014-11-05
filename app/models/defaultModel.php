@@ -12,7 +12,9 @@ class DefaultModel extends Exception {
 	public function body(){
 		include LIBRARY . 'welcome.php';
 		
-		echo   '<h1>This is default page.</h1>
+		echo   '<div class="container">
+				<div class="row">
+				<h1>This is default page.</h1>
 				<h3>If you are seeing this page, it means you can go <span style="color:red;">Viral</span> with <span style="color:green;">viralphp</span>.<br>
 				Not exactly MVC but your own custom PHP Script like MVC.</h3>
 				<p>And do you want to know what is good about it?<br>
@@ -20,6 +22,8 @@ class DefaultModel extends Exception {
 				</p>';
 				
 		Welcome::welcomeMsg();
+		
+		echo '</div></div>';
 	}	
 	
 	
