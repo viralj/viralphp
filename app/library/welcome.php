@@ -13,7 +13,8 @@ class Welcome extends Exception{
 	public function welcomeMsg(){
 	
 		echo 'This is Welcome Message for you...!<br>
-				If you want to know more about this custom MVC Script, please read more about it <a href="'.SITE.'README">here</a> or learn from <a href="http://viralphp.com">here</a>.';
+				If you want to know more about this custom MVC Script, please read more about it locally at <a href="'.SITE.'README">here</a> or learn from <a href="http://viralphp.com">viralphp.com</a>, 
+				the official website of project.';
 	}
 }
 
