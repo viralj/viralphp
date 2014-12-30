@@ -15,8 +15,10 @@ class User extends Exception{
 	*/
 	public function userAccount($var){
 		
+		$header = '<title>'.$var[0].'</title>';
+		
 		//view header, head and footer to load
-		echo Views::header();
+		echo Views::header($header);
 		echo Views::head();
 		
 		
@@ -30,9 +32,11 @@ class User extends Exception{
 		Public function to show user's blog on page when requested
 	*/
 	public function blog($var){
-
+		
+		$header = '<title>'.$var[0].' : Blog</title>';
+			
 		//view header, head and footer to load
-		echo Views::header();
+		echo Views::header($header);
 		echo Views::head();
 	
 		echo 'This is blog of <b>'.$var.'</b>';
