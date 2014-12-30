@@ -13,13 +13,13 @@ class ErrorPage extends Exception{
 	
 	public function IndexAction(){
 		
-		$header = '<title>Page not found.</title>';
+		$header = '<title>Error: Page not found.</title>';
 		
 		//view header, head and footer to load
 		echo Views::header($header);
 		echo Views::head();
 
-		echo 'This is error page';
+		echo 'We can\'t find the page that you are looking for.';
 	
 		echo Views::footer();
 	}
