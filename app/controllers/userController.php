@@ -33,7 +33,8 @@ class User extends Exception{
 	*/
 	public function blog($var){
 		
-		$header = '<title>'.$var[0].' : Blog</title>';
+		$header  = '<title>'.$var[0].' : Blog</title>';
+		$header .= '<meta name="User name" content="'.$var[0].'">';
 			
 		//view header, head and footer to load
 		echo Views::header($header);
